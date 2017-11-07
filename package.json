@@ -1,0 +1,30 @@
+{
+  "resolutions": {
+    "minimist": "1.2.0",
+    "chalk": "2.3.0",
+    "ansi-styles": "3.2.0",
+    "supports-color": "4.5.0",
+    "has-flag": "2.0.0",
+    "source-map": "0.5.7",
+    "strip-bom": "3.0.0",
+    "abbrev": "1.1.1",
+    "async": "2.6.0",
+    "wordwrap": "1.0.0",
+    "debug": "3.1.0"
+  },
+  "dependencies": {
+    "@types/jasmine": "^2.6.3",
+    "@types/node": "^8.0.50",
+    "istanbul": "1.1.0-alpha.1",
+    "jasmine": "^2.8.0",
+    "rxjs": "^5.5.2",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1",
+    "xhr-mock": "2.0.0-preview.8"
+  },
+  "name": "xhr-mock-rx",
+  "scripts": {
+    "test": "ts-node node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=./spec/support/jasmine.json",
+    "test:coverage": "ts-node node_modules/istanbul/lib/cli.js cover -e .ts  -x \"*.d.ts\" -x \"*.spec.ts\" -x \"*.mock.ts\" node_modules/jasmine/bin/jasmine.js -- JASMINE_CONFIG_PATH=./spec/support/jasmine.json"
+  }
+}
